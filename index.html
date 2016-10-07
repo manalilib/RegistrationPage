@@ -1,0 +1,52 @@
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <script src="js/validation.js"></script>
+        
+    </head>
+    <body>
+
+      <form name="register" action="index.html" method="post">
+      
+        <h1>Sign Up</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Personal Info</legend>
+          <label>Title:</label>
+          <input type="radio" id="male" value="male" name="user_title" required=""><label for="male" class="light">Mr.</label>
+          <input type="radio" id="female" value="female" name="user_title" required=""><label for="female" class="light">Ms.</label><br>
+          <label for="firstName">Firstname:</label>
+          <input type="text" id="fName" name="user_fname" required="">
+          
+          <label for="lastName">Lastname:</label>
+          <input type="text" id="lName" name="user_lname" required="">
+          
+
+          <label for="birthday">Birthday:</label>
+          <input id="birthday" type="date" name="birthday" required="">
+
+          <input type="checkbox" id="legalAge" value="legalAge" name="user_legal" required=""><label class="light" for="legalAge">I hereby declare that I am 18+ years of age.</label><br>
+          
+        </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">2</span>Address</legend>
+                   <label for="street">Street:</label>
+          <input type="text" id="street" name="user_street">
+          
+          <label for="town">Town:</label>
+          <input type="text" id="town" name="user_town">
+
+          <label for="postalCode">Postal code:</label>
+          <input type="text" id="postalCode" name="user_postalCode">
+
+        </fieldset>
+        <button type="submit" onclick="validateEntries()">Sign Up</button>
+      </form>
+      
+    </body>
+</html>
