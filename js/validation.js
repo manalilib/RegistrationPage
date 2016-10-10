@@ -43,7 +43,7 @@ function validateBDate (birthday){}
 if(bday >= 18){
 	return true;
 }
-esle{
+else{
 	return false;
 }
 }
